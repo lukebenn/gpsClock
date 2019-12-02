@@ -26,7 +26,16 @@ Arduino-based GPS desk clock loaded with additional features
  - DS1307 Real Time Clock Module (I2C)
  - 4-Digit 14-Segment Display with Adafruit Backpack (I2C Address set to 0x71)  
  - 4-Digit 7-Segment Display with Adafruit Backpack (I2C Address set to 0x70, default)  
-   
+ 
+## Required Libraries
+ - Wire.h (Included)
+ - EEPROM.h (Included)
+ - SoftwareSerial.h
+ - dht.h
+ - RTClib.h
+ - Adafruit_GFX.h
+ - Adafruit_LEDBackpack.h
+ - TinyGPS.h
    
 ## Arduino Pinout
 **A0** - Photoresistor  
