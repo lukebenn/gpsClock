@@ -53,7 +53,7 @@ Arduino-based GPS desk clock loaded with additional features
 **D10** - GPS Recive  
 **D11** - GPS Transmit (N/C on 5V Arduinos)  
 
-##How to Read Schematic File
+## How to Read Schematic File
  1. Download Fritzing
  2. Install Adafruit LED Backpack Parts
  3. Open .fzz file
