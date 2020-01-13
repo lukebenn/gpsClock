@@ -9,12 +9,13 @@ Arduino-based GPS desk clock loaded with additional features
  - Single Alarm with snooze function
  - °C Tempurature Display  
  - % Humidity Display  
- - Manually Adjusted Time Zone  
+ - Manually Adjusted Time Zone 
+ - Auto Brightness
  - Speed and Heading Displays with ~1 seccond update rate (Using Fast Mode)  
  - Date Display (MM.DD)  
  - Mode Display for knowing current display page  
- - *Fast Mode* increases GPS update rate with conprimise of slower button response 
- (Activated with A Button on 7 Segment Speed Display)
+ - *Fast Mode* increases GPS update rate with comprimise of slower button response 
+ (Activated with A Button on 7 Segment Speed or Heading Display)
   
 ## Required Hardware
  - Arduino Device (Only Tested on UNO and NANO)  
@@ -49,9 +50,9 @@ Arduino-based GPS desk clock loaded with additional features
 **D5** - B  
   
 **D8** - Buzzer  
-**D7** - DHT11 Pin  
-**D10** - GPS Recive  
-**D11** - GPS Transmit (N/C on 5V Arduinos)  
+**D7** - DHT11 Serial Data Pin  
+**D10** - GPS RX (Recive)
+**D11** - GPS TX (Transmit) (N/C on 5V Arduinos)  
 
 ## How to Read Schematic File
  1. Download Fritzing
