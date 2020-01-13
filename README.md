@@ -53,6 +53,12 @@ Arduino-based GPS desk clock loaded with additional features
 **D10** - GPS Recive  
 **D11** - GPS Transmit (N/C on 5V Arduinos)  
 
+##How to Read Schematic File
+ 1. Download Fritzing
+ 2. Install Adafruit LED Backpack Parts
+ 3. Open .fzz file
+
+
 ### Improvments
  - Moving to a 3.3V Arduino and a 5V Supply for displays will allow the ability to increase bause rate of GPS and further increase update rate without the need for fast mode.  
  - More Precise Tempurature Gauge  
