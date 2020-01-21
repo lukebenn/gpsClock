@@ -16,10 +16,10 @@ A0 - Photoresistor
 A4 - I2C Data
 A5 - I2C Clock
 
-D2 - bsc (Big Screen Cycle)
-D3 - ssc (Small Screen Cycle)
-D4 - A
-D5 - B
+D5 - bsc (Big Screen Cycle)
+D4 - ssc (Small Screen Cycle)
+D3 - A
+D2 - B
 
 D8 - Buzzer
 D7 - DHT11 Pin
@@ -85,10 +85,10 @@ int speedUnits = 0;
 //3: knots (Tentative)
 
 //Define Button Pins
-#define bsc 2
-#define ssc 3
-#define a 4
-#define b 5
+#define bsc 5
+#define ssc 4
+#define a 3
+#define b 2
 
 char sec[2];
 bool hour24 = false;
@@ -609,12 +609,12 @@ void loop() {
       case 1:{
         int cMin = now.minute();
         int cHour = now.hour();
-        if (cHour >= 12 && ! hour24) {
+        if (cHour >= 12 && !hour24) {
           if (cHour > 12){
             cHour = cHour - 12;
           }
         }
-        else if (cHour == 0 && ! hour24){
+        else if (cHour == 0 && !hour24){
           cHour = 12;
         }
         else if (cHour == 0 && hour24){
@@ -636,10 +636,10 @@ void loop() {
         int Dcol = 0x00;
         int result;
 
-        if(now.second() % 2 == 0) Ccol = 0x02;
-        if(alarmEnabled)          Lcol = 0x08;
-        if(!hour24)               Ucol = 0x04;
-        if(alarmSnoozed)          Dcol = 0x10;
+        if(now.second() % 2 == 0)  Ccol = 0x02;
+        if(alarmEnabled)           Lcol = 0x08;
+        if(!hour24 && cHour >= 12) Ucol = 0x04;
+        if(alarmSnoozed)           Dcol = 0x10;
 
         result = Ccol | Ucol | Lcol | Dcol;
         seg7.writeDigitRaw(2, result);
