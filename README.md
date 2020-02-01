@@ -59,6 +59,7 @@ Arduino-based GPS desk clock loaded with additional features
  2. Install Adafruit LED Backpack Parts
  3. Open .fzz file
 
+![Schematic](/schem/schem.png)
 
 ### Improvments
  - Moving to a 3.3V Arduino and a 5V Supply for displays will allow the ability to increase bause rate of GPS and further increase update rate without the need for fast mode.  
