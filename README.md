@@ -3,7 +3,7 @@ Arduino-based GPS desk clock loaded with additional features
   
   
 ## Official Feature List
- - Dual Display  
+ - Dual Display  (Large 4-Dig 7-Seg, Small 4-Dig 14-Seg)  
  - 12/24 Hour Clock 
  - Auto-Adjusted time by GPS  
  - Single Alarm with snooze function
