@@ -62,4 +62,4 @@ Arduino-based GPS desk clock loaded with additional features
 
 ### Improvments
  - Moving to a 3.3V Arduino and a 5V Supply for displays will allow the ability to increase bause rate of GPS and further increase update rate without the need for fast mode.  
- - More Precise Tempurature Gauge  
+ - More Precise Tempurature Gauge DHT22 is great but more precision would be great.
