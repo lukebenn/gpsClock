@@ -29,8 +29,8 @@ Arduino-based GPS desk clock loaded with additional features
  - 4-Digit 7-Segment Display with Adafruit Backpack (I2C Address set to 0x70, default)  
  
 ## Required Libraries
- - Wire.h (Included)
- - EEPROM.h (Included)
+ - Wire.h (Included with Arduino IDE)
+ - EEPROM.h (Included with Arduino IDE)
  - SoftwareSerial.h
  - dht.h
  - RTClib.h
@@ -44,10 +44,10 @@ Arduino-based GPS desk clock loaded with additional features
 **A4** - I2C Data  
 **A5** - I2C Clock  
   
-**D2** - bsc (Big Screen Cycle)  
-**D3** - ssc (Small Screen Cycle)  
-**D4** - A  
-**D5** - B  
+**D2** - B  
+**D3** - A  
+**D4** - ssc (Small Screen Cycle)  
+**D5** - bsc (Big Screen Cycle)  
   
 **D8** - Buzzer  
 **D7** - DHT11 Serial Data Pin  
@@ -62,4 +62,4 @@ Arduino-based GPS desk clock loaded with additional features
 
 ### Improvments
  - Moving to a 3.3V Arduino and a 5V Supply for displays will allow the ability to increase bause rate of GPS and further increase update rate without the need for fast mode.  
- - More Precise Tempurature Gauge  
+ - More Precise Tempurature Gauge DHT22 is great but more precision would be great.
